@@ -21,7 +21,7 @@ https://harmony.one/pga/network
 # I think my node is messed up, how do I restart?
 https://docs.harmony.one/pangaea/troubleshooting/how-to-restart-your-node/regular-setup-or-one-click-setup
 
-# Where is the official documentation for Harmony Pangaea ? 
+# Official documentation for Harmony Pangaea ? 
 https://docs.harmony.one/pangaea/
 
 # How do I know if the Pangaea Blockchain has been reset?
