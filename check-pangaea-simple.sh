@@ -18,6 +18,10 @@ echo " What was the last time my node synched: "
 grep "Node is now IN SYNC" latest/zerolog*.log | tail -n1
 echo "_________________________________________________________"
 echo
+echo " Do I have reached consensus: "
+grep -i "BINGO" latest/zerolog*.log | tail -n1
+echo "_________________________________________________________"
+echo
 echo -n " What Shard am I on: "; tput setaf 7; tac latest/*.log | grep -oam 1 -E "\"(blockShard|[Ss]hardID)\":[0-3]"
 echo "_________________________________________________________"
 echo
