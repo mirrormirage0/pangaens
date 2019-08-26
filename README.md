@@ -9,8 +9,8 @@ It is a collection of Harmony Pangaea Node commands to find
 # How do I run them ?
 Copy the .sh file to your server, give execute privileges, run!
 ```
-chmod u+x pangaea-node-health.sh
-./pangea-node-health.sh
+chmod u+x check_pangaea.sh
+./check_pangaea.sh
 ```
 
 # Does Harmony team publish status of Shards and the latest block number for each Shard?
