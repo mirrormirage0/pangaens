@@ -8,7 +8,7 @@ It is a collection of Harmony Pangaea Node commands to find
 5) Is my Shard Online?
 
 # How do I run them ?
-Login to your server and issue the following commands
+Login to your server and issue the following commands (They are commands to get the file, give it execute privileges and execute!)
 ```
 wget https://raw.githubusercontent.com/mirrormirage0/pangaens/master/check_pangaea.sh
 chmod u+x check_pangaea.sh
