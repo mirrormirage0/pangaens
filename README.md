@@ -8,10 +8,11 @@ It is a collection of Harmony Pangaea Node commands to find
 5) Is my Shard Online?
 
 # How do I run them ?
-Copy the .sh file to your server, give execute privileges, run!
+Login to your server and issue the following commands
 ```
-chmod u+x check_pangaea_simple.sh
-./check_pangaea_simple.sh
+wget https://raw.githubusercontent.com/mirrormirage0/pangaens/master/check_pangaea.sh
+chmod u+x check_pangaea.sh
+./check_pangaea.sh
 ```
 
 # Does Harmony team publish status of Shards and the latest block number for each Shard?
