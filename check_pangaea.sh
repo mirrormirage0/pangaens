@@ -21,7 +21,7 @@ tput setaf 2; echo " Online status of my Shard: "
 # Create variable for next grep command
 shardLINE=$(echo shard $shardNO)
 # Get only the line for the correct shard number
-shardSTATUS=$(tac network | grep -i "$shardLINE")
+shardSTATUS=$(cat network | grep -i "$shardLINE")
 tput setaf 7; echo $shardSTATUS
 echo "_________________________________________________________"
 echo
