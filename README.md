@@ -5,6 +5,7 @@ It is a collection of Harmony Pangaea Node commands to find
 2) Wallet Balance
 3) When did my node last sync/get the bingo message?
 4) Which Shard does my node belong to?
+5) Is my Shard Online?
 
 # How do I run them ?
 Copy the .sh file to your server, give execute privileges, run!
