@@ -1,4 +1,4 @@
-# What does the shell scripts do ?
+# What does the shell script do ?
 
 It is a collection of Harmony Pangaea Node commands to find 
 1) Node Block number
