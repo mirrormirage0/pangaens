@@ -35,7 +35,7 @@ tput setaf 2; echo " What was the last time my node synched: "
 tput setaf 7; grep "Node is now IN SYNC" latest/zerolog*.log | tail -n1
 echo "_________________________________________________________"
 echo
-tput setaf 2; echo " Do I have reached consensus: "
+tput setaf 2; echo " When was the last Consensus / BINGO ? "
 tput setaf 7; grep -i "BINGO" latest/zerolog*.log | tail -n1
 echo "_________________________________________________________"
 echo
