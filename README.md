@@ -10,7 +10,7 @@ It is a collection of Harmony Pangaea Node commands to find
 # How do I run them ?
 Login to your server and issue the following commands (They are commands to get the file, give it execute privileges and execute!)
 ```
-wget https://raw.githubusercontent.com/mirrormirage0/pangaens/master/check_pangaea.sh
+curl -LO https://raw.githubusercontent.com/mirrormirage0/pangaens/master/check_pangaea.sh
 chmod u+x check_pangaea.sh
 ./check_pangaea.sh
 ```
