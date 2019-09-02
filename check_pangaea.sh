@@ -6,7 +6,7 @@ echo
 tput setaf 1; echo " PANGAEA MyNode Health Check"
 tput setaf 7; echo "_________________________________________________________"
 echo
-tput setaf 2; echo " Is my Node running? Is it connected to latest bootnode: "
+tput setaf 2; echo " Is my Node process running? Is it connected to latest bootnode: (No output means node is not running)"
 tput setaf 7; ps aux | grep '[h]armony -bootnodes' | grep 54.86.126.90
 echo "_________________________________________________________"
 echo
@@ -44,3 +44,8 @@ tput setaf 7; ./wallet.sh -t balances
 echo
 # Cleanup file "network" for next run
 rm network
+#Wallet status and Shard Status according to harmony
+wallet=$(cd; ./wallet.sh list | grep account | awk '{print $2}'); 
+my_shard=$(grep -Eom1 "shardID\"\:[0-9]+" latest/validator*.log | cut -d: -f2); 
+pga_out=$(curl -s https://harmony.one/pga/network); 
+(echo "${pga_out}" | grep -E '^OFFLINE ' -A10000 | grep -q ${wallet} && echo wallet ${wallet} OFFLINE  ) || echo "wallet ${my_shard}:${wallet} ONLINE"; echo "${pga_out}" | grep "Shard ${my_shard} is"
