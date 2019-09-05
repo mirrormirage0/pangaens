@@ -43,7 +43,7 @@ tput setaf 2; echo " What is my wallet balance?"
 tput setaf 7; ./wallet.sh -t balances
 echo "_________________________________________________________"
 echo
-tput setaf 2; echo -n "Total Pending transactions in my node"; tput setaf 7; tac latest/zero*.log | grep -oam 1 -E "\"("totalPending")\":[0-9\"]*"
+tput setaf 2; echo -n "Total Pending transactions "; tput setaf 7; tac latest/zero*.log | grep -oam 1 -E "\"("totalPending")\":[0-9\"]*"
 echo "_________________________________________________________"
 echo
 tput setaf 2; echo -n "Last message in log file "; tput setaf 7; tail -n 1 latest/zero*.log
